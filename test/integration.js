@@ -11,8 +11,8 @@ describe('RF API', () => {
     expect(rf.reqUri).to.have.string(secrets.apiKey)
   })
 
-  it('gets the leages', (done) => {
-    rf.getLeages().then((leagues) => {
+  it('gets the leagues', (done) => {
+    rf.getLeagues().then((leagues) => {
 
       expect(leagues).to.be.ok
       expect(typeof leagues).to.equal('object')

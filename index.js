@@ -13,7 +13,7 @@ class RF {
   /**
    * @return {Promise}
    */
-  getLeages () {
+  getLeagues () {
     return new Promise((resolve, reject) => {
       request({
         uri: this.reqUri + '&req=leagues',
