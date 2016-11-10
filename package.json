@@ -1,0 +1,25 @@
+{
+  "name": "resultados-futbol-api",
+  "version": "0.0.0",
+  "description": "Node implementation for the resultados-futbol.com API",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goferito/resultados-futbol-node-api.git"
+  },
+  "keywords": [
+    "resultados",
+    "futbol",
+    "node",
+    "api"
+  ],
+  "author": "Mr. Goferito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goferito/resultados-futbol-node-api/issues"
+  },
+  "homepage": "https://github.com/goferito/resultados-futbol-node-api#readme"
+}
