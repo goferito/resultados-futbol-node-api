@@ -23,5 +23,33 @@ describe('RF API', () => {
     .catch(done)
   })
 
+  it('gets the teams', (done) => {
+    rf.getTeams('espana').then((teams) => {
+
+      const celta = {
+        id: '712',
+        nameShow: 'Celta',
+        basealias: 'celta',
+        competition_name: 'Primera División',
+        team_shield: 'http://thumb.resfu.com/img_data/escudos/medium/712.jpg'
+                        + '?size=36x&ext=png&lossy=1&1'
+      }
+
+      expect(teams).to.be.ok
+      expect(teams.teams).to.have.length(20)
+      expect(teams.teams.some((team) => {
+        try {
+          expect(team).to.eql(celta)
+          return true
+        } catch (e) {
+          return false
+        }
+      })).to.be.true
+
+      done()
+    })
+    .catch(done)
+  })
+
 })
 
