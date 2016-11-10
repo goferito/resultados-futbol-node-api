@@ -1,6 +1,6 @@
 {
   "name": "resultados-futbol-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Node implementation for the resultados-futbol.com API",
   "main": "index.js",
   "scripts": {
